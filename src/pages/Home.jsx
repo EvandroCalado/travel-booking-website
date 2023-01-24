@@ -8,6 +8,7 @@ import Subtitle from "../shared/Subtitle";
 import SearchBar from "../shared/SearchBar";
 import ServiceList from "../services/ServiceList";
 import FeaturedTourList from "../components/FeaturedTours/FeaturesTours";
+import experienceImg from "../assets/images/experience.png"
 
 const Home = () => {
   return (
@@ -73,6 +74,57 @@ const Home = () => {
               <h2 className="featured__tour-title">Nossas caracteristicas</h2>
             </Col>
             <FeaturedTourList />
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container>
+          <Row>
+            <Col lg="6">
+              <div className="experience__content">
+                <Subtitle subtitle={"Experiência"} />
+                <h2>
+                  Com toda nossa experiência <br />
+                  vamos realizar seu sonho
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  <br />
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+              <div className="counter__wrapper d-flex align-items-center gap-5">
+                <div className="counter__box">
+                  <span>12k+</span>
+                  <h6>Viagens realizadas</h6>
+                </div>
+                <div className="counter__box">
+                  <span>2k+</span>
+                  <h6>Clientes Regulares</h6>
+                </div>
+                <div className="counter__box">
+                  <span>15</span>
+                  <h6>Anos de experiência</h6>
+                </div>
+              </div>
+            </Col>
+            <Col lg="6">
+              <div className="experience__img">
+                <img src={experienceImg} alt="Experience" />
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12">
+              <Subtitle subtitle={"Caleria"} />
+              <h2 className="gallery__title">
+                Visite a galeria dos nossos clientes
+              </h2>
+            </Col>
           </Row>
         </Container>
       </section>
